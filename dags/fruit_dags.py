@@ -14,12 +14,12 @@ with DAG(
 
     t1_orange = BashOperator(
         task_id="t1_orange",
-        bash_command="/home/allrealjgt/airflow_data/plugins/select_fruit.sh ORANGE"
+        bash_command="/opt/airflow/plugins/select_fruit.sh ORANGE"
     )
 
     t2_avocado = BashOperator(
         task_id="t2_avocado",
-        bash_command="/home/allrealjgt/airflow_data/plugins/select_fruit.sh AVOCADO"
+        bash_command="/opt/airflow/plugins/select_fruit.sh AVOCADO"
     )
 
     # task 수행 순서
